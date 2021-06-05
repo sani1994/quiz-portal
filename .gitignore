@@ -75,20 +75,6 @@ temp-export-files
 *.db
 static/model_data/
 config/database.py
-config/dbbackup_restore_config.py
-config/celery_config.py
-config/email_config.py
-config/cache_config.py
-config/aws_s3_config.py
-
-
-
-# Vue js gitignore
-.DS_Store
-node_modules/
-dist/
-npm-debug.log
-yarn-error.log
 
 # Editor directories and files
 .idea

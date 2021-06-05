@@ -24,7 +24,10 @@ modalBtns.forEach(modalBtn => modalBtn.addEventListener('click', () => {
       <li>Pass: <b>${modaldata.pass} %</b></li>
       </ul>
       </div>
-`
+        `
+   if (parseInt(modalBtn.getAttribute('data-question')) !== 0) {
+      startBtn.addClass('hide')
+   }
    startBtn.addEventListener('click', () => {
       window.location.href = url + modaldata.pk
 
