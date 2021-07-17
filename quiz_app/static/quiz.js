@@ -97,7 +97,7 @@ const submit_quiz = () => {
          success: function (response) {
             const modal_header = document.getElementsByClassName("modal-header")
             let is_pass = null
-            if (response.pass == true) {
+            if (response.pass === true) {
                is_pass = "Congratulations..!!"
                $(modal_header).addClass("bg-success")
             } else {

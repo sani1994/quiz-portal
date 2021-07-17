@@ -6,7 +6,7 @@ let modaldata = {}
 const url = window.location.href
 
 modalBtns.forEach(modalBtn => modalBtn.addEventListener('click', () => {
-   modaldata['pk'] = modalBtn.getAttribute('data-pk'),
+      modaldata['pk'] = modalBtn.getAttribute('data-pk'),
       modaldata['quiz'] = modalBtn.getAttribute('data-quiz'),
       modaldata['question'] = modalBtn.getAttribute('data-question'),
       modaldata['difficulty'] = modalBtn.getAttribute('data-difficulty'),
@@ -25,9 +25,6 @@ modalBtns.forEach(modalBtn => modalBtn.addEventListener('click', () => {
       </ul>
       </div>
         `
-   if (parseInt(modalBtn.getAttribute('data-question')) !== 0) {
-      startBtn.addClass('hide')
-   }
    startBtn.addEventListener('click', () => {
       window.location.href = url + modaldata.pk
 
